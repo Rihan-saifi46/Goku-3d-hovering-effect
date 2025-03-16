@@ -22,53 +22,72 @@ body{
     height: 62vh;   width: 24vw; position: relative;  border-radius: 20px; transition: .7s ease;
     box-shadow: 0 5px 5px black;  background-size: 100% 100%; background-repeat: no-repeat;
 }
+.card1{
+    background-image: url(./images/13.jpg); position: relative;
+ }
+ .card2{
+    background-image: url(./images/10.jpg); position: relative;
+ }
+ .card{
+    background-image: url(./images/12.jpg); position: relative;
+ }
+ .card1:hover, .card:hover,.card2:hover{
+     transform: perspective(1000px) rotatey(-6deg) rotatex(65deg);
+     opacity: 0.6; position: relative; filter: blur(10px);
+ }
+ .bird1,.bird,.bird2{
+     height: 52vh;  width: 20vw;  pointer-events: none; opacity: 0;
+     background-repeat: no-repeat; background-image: url(./images/13-removebg-preview.png); background-size: 100% 100%;  transition: .5s; position: absolute;
+ }
+ .bird{
+     background-image: url(./images/12-removebg-preview.png);
+ }
+ .bird2{
+     background-image: url(./images/10-removebg-preview.png); background-size: 100% 100%;
+ }
+ .card1:hover + .bird1,.card:hover + .bird , .card2:hover + .bird2  {
+     transform: perspective(1000px) translateY(-110px);
+     z-index: 999; 
+     filter: drop-shadow(0 0 20px white);  
+     opacity: 1;
+ }
+ .card1:hover + .bird1{
+     scale: 1.2;  filter: drop-shadow(0 0 5px #111);
+ }
+ .card:hover + .bird {
+    scale: 1.2; filter: drop-shadow(0 0 25px #ffffff);
+ } 
+ .card2:hover + .bird2 {
+     filter: drop-shadow(0 0 20px #ffffff); scale: 1.2;
+ }
 @media (max-width:600px){
+    body{
+      height: 230vh;  background-image: url(https://images.hdqwalls.com/wallpapers/principles-of-goku-vp.jpg);
+        background-position: center; background-repeat: no-repeat; background-size: cover;
+    }
     .container{
-        height: 100vh; width: 100vw; display: flex; gap: 5vw; padding-top: 17vw; 
-        background-color: #111; 
+        height: 100%; width: 100vw; display: flex;   
+       background-image: none;
     }
     .c-con{
-        height: 55vh; width: 70vw; border: 2px sienna solid; display: flex; border-radius: 20px;
+        height: 65vh; width: 60vw; display: flex; border-radius: 20px;
     }
     .card,.card1,.card2{
         height: 100%; width: 100%;
     }
-}
-.card1{
-   background-image: url(./images/13.jpg); position: relative;
-}
-.card2{
-   background-image: url(./images/10.jpg); position: relative;
-}
-.card{
-   background-image: url(./images/12.jpg); position: relative;
-}
-.card1:hover, .card:hover,.card2:hover{
-    transform: perspective(1000px) rotatey(-6deg) rotatex(65deg);
-    opacity: 0.6; position: relative; filter: blur(10px);
-}
-.bird1,.bird,.bird2{
-    height: 52vh;  width: 20vw;  pointer-events: none; opacity: 0;
-    background-repeat: no-repeat; background-image: url(./images/13-removebg-preview.png); background-size: 100% 100%;  transition: .5s; position: absolute;
-}
-.bird{
-    background-image: url(./images/12-removebg-preview.png);
-}
-.bird2{
-    background-image: url(./images/10-removebg-preview.png); background-size: 100% 100%;
-}
-.card1:hover + .bird1,.card:hover + .bird , .card2:hover + .bird2  {
-    transform: perspective(1000px) translateY(-110px);
-    z-index: 999; 
-    filter: drop-shadow(0 0 20px white);  
-    opacity: 1;
-}
-.card1:hover + .bird1{
-    scale: 1.2;  filter: drop-shadow(0 0 5px #111);
-}
-.card:hover + .bird {
-   scale: 1.2; filter: drop-shadow(0 0 25px #ffffff);
-} 
-.card2:hover + .bird2 {
-    filter: drop-shadow(0 0 20px #ffffff); scale: 1.2;
+    .bird,.bird1,.bird2{
+        height: 50vh; width: 32vw; 
+    }
+    .card1:hover + .bird1{
+         filter: drop-shadow(0 0 5px #111);
+    }
+    .card1:hover + .bird1,.card:hover + .bird , .card2:hover + .bird2  {
+        transform: perspective(1000px) translateY(-50px);
+        z-index: 999; 
+        filter: drop-shadow(0 0 20px white);  
+        opacity: 1;
+    }
+    .card2:hover + .bird2 {
+        filter: drop-shadow(0 0 20px #ffffff); scale: 1.2;
+    }
 }
