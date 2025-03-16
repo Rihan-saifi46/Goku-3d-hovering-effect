@@ -62,7 +62,7 @@ body{
  }
 @media (max-width:600px){
     body{
-      height: 230vh;  background-image: url(https://images.hdqwalls.com/wallpapers/principles-of-goku-vp.jpg);
+      height: 170vh;  background-image: url(https://images.hdqwalls.com/wallpapers/principles-of-goku-vp.jpg);
         background-position: center; background-repeat: no-repeat; background-size: cover;
     }
     .container{
@@ -70,13 +70,13 @@ body{
        background-image: none;
     }
     .c-con{
-        height: 65vh; width: 60vw; display: flex; border-radius: 20px;
+        height: 50vh; width: 60vw; display: flex; border-radius: 20px;
     }
     .card,.card1,.card2{
         height: 100%; width: 100%;
     }
     .bird,.bird1,.bird2{
-        height: 50vh; width: 32vw; 
+        height: 30vh; width: 34vw; 
     }
     .card1:hover + .bird1{
          filter: drop-shadow(0 0 5px #111);
